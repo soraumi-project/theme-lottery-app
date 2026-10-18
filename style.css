@@ -1410,3 +1410,89 @@ a:hover {
     padding: 18px;
   }
 }
+
+/* お題管理ページの使い方ガイド */
+.manage-guide {
+  max-width: 680px;
+  margin: 24px auto 32px;
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.manage-guide h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.manage-guide h3 {
+  margin: 22px 0 8px;
+  font-size: 16px;
+}
+
+.manage-guide p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.manage-guide ul {
+  margin: 12px 0 16px;
+  padding-left: 24px;
+}
+
+.manage-guide li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .manage-guide {
+    padding: 16px;
+    margin: 20px auto 24px;
+  }
+}
+
+/* お題の組み合わせ例：カテゴリ別表示 */
+.idea-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+  text-align: left;
+}
+
+.idea-theme-grid>div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  background: #f4f6f9;
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.idea-theme-grid strong {
+  font-size: 12px;
+  color: #56657d;
+}
+
+.idea-theme-grid span {
+  font-size: 14px;
+  color: #29313d;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 400px) {
+  .idea-theme-grid {
+    gap: 8px;
+  }
+
+  .idea-theme-grid>div {
+    padding: 10px;
+  }
+}
